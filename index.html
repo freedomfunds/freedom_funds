@@ -9,70 +9,92 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
+      background: #f4f9ff;
       color: #333;
       text-align: center;
     }
     header {
-      background-color: #004aad;
+      background: #0056b3;
       color: white;
-      padding: 30px 15px;
+      padding: 30px 20px;
     }
     header h1 {
+      font-size: 2.5rem;
       margin: 0;
-      font-size: 2.2em;
       letter-spacing: 2px;
     }
     header p {
-      margin: 5px 0 0;
-      font-size: 1.1em;
+      font-size: 1rem;
+      margin-top: 5px;
       font-style: italic;
     }
     section {
-      max-width: 800px;
-      margin: 30px auto;
-      padding: 20px;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
     }
     h2 {
-      color: #004aad;
+      color: #0056b3;
+      margin-bottom: 20px;
     }
     ul {
       text-align: left;
+      display: inline-block;
       margin: 20px auto;
-      max-width: 600px;
-      line-height: 1.8;
     }
-    iframe {
-      max-width: 100%;
-      border-radius: 12px;
+    ul li {
+      margin: 10px 0;
+      font-size: 1.1rem;
     }
     .button {
       display: inline-block;
       margin: 15px 10px;
-      padding: 12px 20px;
-      font-size: 1em;
-      font-weight: bold;
+      padding: 14px 22px;
+      background: #0056b3;
       color: white;
-      background-color: #004aad;
-      border: none;
-      border-radius: 8px;
       text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
       transition: 0.3s;
     }
     .button:hover {
-      background-color: #002f6c;
+      background: #003f80;
+    }
+    /* Responsive YouTube embed fix */
+    .video-container {
+      display: flex;
+      justify-content: center;
+      margin: 30px 0;
+    }
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 400px;
+      padding-bottom: 177.78%; /* keeps vertical ratio */
+      height: 0;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
     footer {
-      margin: 40px 0 20px;
-      font-size: 0.9em;
-      color: #555;
+      background: #333;
+      color: white;
+      padding: 20px;
+      margin-top: 30px;
+    }
+    footer p {
+      margin: 5px 0;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>FREEDOM FUNDS PROGRAM</h1>
     <p>by Mentor Joshua</p>
@@ -80,19 +102,20 @@
 
   <section>
     <h2>Welcome!</h2>
-    <p>Learn how to make money online with just your smartphone through my proven Freedom Funds Program.</p>
-    
-    <!-- YouTube Video Embed -->
-    <div style="margin: 20px 0;">
-      <iframe width="560" height="315" 
+    <p>Learn how to make money online with just your smartphone. Gain real digital skills and start earning today 🚀</p>
+  </section>
+
+  <!-- YouTube Video Embed -->
+  <div class="video-container">
+    <div class="video-wrapper">
+      <iframe 
         src="https://www.youtube.com/embed/aZlqtREYd7M" 
-        title="YouTube video player" 
         frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
         allowfullscreen>
       </iframe>
     </div>
-  </section>
+  </div>
 
   <section>
     <h2>What You'll Learn</h2>
@@ -100,7 +123,7 @@
       <li>✅ Introduction To Affiliate Marketing</li>
       <li>✅ Meaning Of Leads</li>
       <li>✅ Types Of Leads</li>
-      <li>✅ Organic/InOrganic Leads</li>
+      <li>✅ Organic / Inorganic Leads</li>
       <li>✅ How To Create Your Business Flier</li>
       <li>✅ How To Setup Your WhatsApp Business Account</li>
       <li>✅ How To Setup Your Facebook Page</li>
@@ -114,18 +137,16 @@
   </section>
 
   <section>
-    <h2>Join Our Communities</h2>
     <a href="https://chat.whatsapp.com/G5QRYqh11oO8pRJjVyzpX1" class="button">CLICK HERE TO JOIN THE WHATSAPP COMMUNITY</a>
     <a href="https://t.me/+u7vs-0hVjOgzYWFk" class="button">JOIN THE TELEGRAM MENTORSHIP GROUP</a>
-  </section>
-
-  <section>
     <a href="https://t.me/+8hFaNWea9q0yNDA0" class="button">ACCESS LESSONS</a>
   </section>
 
   <footer>
-    <p>📧 Contact: Joshuachubie07@gmail.com | 📱 +234 911 284 7395</p>
-    <p>&copy; 2025 Freedom Funds Program. All rights reserved.</p>
+    <p>📞 Contact: +234 911 284 7395</p>
+    <p>📧 Email: joshuachubie07@gmail.com</p>
+    <p>&copy; 2025 Freedom Funds Program</p>
   </footer>
+
 </body>
-</html>
+</html> 
